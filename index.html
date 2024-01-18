@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+  <content="width=device-width, user-scalable=no, initial-scale=1.0>
+        <title>Tic-Tac-Toe</title>
+        <link rel="stylesheet" href="style.css">
+    <body>
+      <div id="main">
+        <h1>Login Page</h1>
+        <form id="Login">
+            <label id="txt1">Player1</label><br>
+            <input type="text" class="play1" name="Player1" value="Enter Username" ><br><br>
+        
+            <label id="txt1">Player2</label><br>
+            <input type="text" class="play2" name="Player2" value="Enter Username" ><br><br>
+        
+            <input type="button" class="btn" onclick="start();" value="Submit">
+          </form>
+          </div>
+<div id="gameContainer">
+        <h1>Tic Tac Toe</h1>
+<table>
+  <tr>
+    <td id="score">
+	<div class="player">
+      <div id="turn">Player X Turn!</div>
+
+      <br/>
+      <br/> X Scores
+      <div id="xscore">0</div> <br/>
+
+	  O Scores
+      <div id="oscore">0</div> <br/>
+	  </div>
+     <div class="container">
+                <div id="0" class="cell"></div>
+                <div id="1" class="cell"></div>
+                <div id="2" class="cell"></div>
+                <div id="3" class="cell"></div>
+                <div id="4" class="cell"></div>
+                <div id="5" class="cell"></div>
+                <div id="6" class="cell"></div>
+                <div id="7" class="cell"></div>
+                <div id="8" class="cell"></div>
+            </div>
+    </td>
+    <td class="board">
+    </td>
+	
+  </tr>
+</table>
+
+<button onclick="restartGame()" onclick="restartGame">Restart Game</button>
+<button onclick="resetGame()" onclick="resetGame">Reset Game</button>
+<h1 id="winner"></h1>
+</div>
+			
+        <script src="script.js"></script>
+    </body>
+</html>
